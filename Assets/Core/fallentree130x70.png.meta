@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fallentree130x70_0: -1169104565686373804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
