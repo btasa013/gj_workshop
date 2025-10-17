@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] new AudioSource audio;
+
+    [SerializeField] AudioClip shootAudio;
+
     [SerializeField] private float speed;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -37,6 +41,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (shootAudio != null) audio.PlayOneShot(shootAudio);
+
             Projectile p = Instantiate(projectile);
             p.transform.position = transform.position;
             p.SetDirection(spriteRenderer.flipX ? -1 : 1);
