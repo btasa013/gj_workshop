@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  spriteRenderer: {fileID: 998065597368340978}
   projectile: {fileID: 1284587226607148272, guid: 40b4d790be9a65647920703485af38a4, type: 3}
   boundsX: {x: -8.5, y: 8.5}
   boundsY: {x: -3.5, y: 2}
