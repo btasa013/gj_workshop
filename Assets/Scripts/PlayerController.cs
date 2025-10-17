@@ -3,13 +3,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float jumpForce;
 
     [SerializeField] private Projectile projectile;
 
+    [SerializeField] private Vector2 boundsX;
+    [SerializeField] private Vector2 boundsY;
+
     private Rigidbody2D rb;
-    
-    public bool onGround;
 
     private void Start()
     {
@@ -20,19 +20,13 @@ public class PlayerController : MonoBehaviour
     {
         // Move
         float x = Input.GetAxis("Horizontal");
-        transform.position += speed * Time.deltaTime * x * Vector3.right;
+        float y = Input.GetAxis("Vertical");
+        Vector3 force = new Vector3(x, y);
+        
+        Vector3 pos = transform.position + speed * Time.deltaTime * force;
 
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && onGround)
-        {
-            rb.AddForceY(jumpForce, ForceMode2D.Impulse);
-            onGround = false;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-            onGround = true;
+        pos.x = Mathf.Clamp(pos.x, boundsX.x, boundsX.y);
+        pos.y = Mathf.Clamp(pos.y, boundsY.x, boundsY.y);
+        transform.position = pos;
     }
 }
