@@ -21,9 +21,7 @@ public class Enemy : MonoBehaviour
 
         else
         {
-            Vector3 pos = transform.position;
-            pos.x = Mathf.MoveTowards(pos.x, player.position.x, speed * Time.deltaTime);
-            transform.position = pos;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
     }
 }

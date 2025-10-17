@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 02da0a4f95e128445a26d8f696819464, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -132,7 +132,6 @@ MonoBehaviour:
   speed: 3
   jumpForce: 3
   projectile: {fileID: 1284587226607148272, guid: 40b4d790be9a65647920703485af38a4, type: 3}
-  onGround: 0
 --- !u!61 &8906389057220855948
 BoxCollider2D:
   m_ObjectHideFlags: 0

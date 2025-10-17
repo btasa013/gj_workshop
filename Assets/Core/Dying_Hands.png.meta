@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dying_Hands_0: 240793060755842692
+      Dying_Hands_1: -6333639323277616482
+      Dying_Hands_2: -720582752459295503
+      Dying_Hands_3: 1804289999972412983
+      Dying_Hands_4: -8199558586088245378
+      Dying_Hands_5: -3757903478945073671
+      Dying_Hands_6: -1973356811680420302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
