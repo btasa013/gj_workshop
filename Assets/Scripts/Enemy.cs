@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
     [SerializeField] private float attackDistance = 2f;
+    [SerializeField] private float enemyHealth = 100f;
 
     private Transform player;
 

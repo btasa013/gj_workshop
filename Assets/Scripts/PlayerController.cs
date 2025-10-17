@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 boundsX;
     [SerializeField] private Vector2 boundsY;
 
+    [SerializeField] private float playerHealth = 100f;
+
     private Rigidbody2D rb;
 
     private void Start()
