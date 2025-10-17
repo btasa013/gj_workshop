@@ -576,6 +576,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1871907603818543824, guid: c85f9c9ec94d9f34ab408525d2921ca7, type: 3}
+      propertyPath: walkAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 14de50ff17cc7de45a613c205b0bf570, type: 3}
+    - target: {fileID: 1871907603818543824, guid: c85f9c9ec94d9f34ab408525d2921ca7, type: 3}
+      propertyPath: shootAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 718a30b861f30794a901583f30b03f05, type: 3}
     - target: {fileID: 6147138083021970094, guid: c85f9c9ec94d9f34ab408525d2921ca7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
