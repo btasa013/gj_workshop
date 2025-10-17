@@ -457,11 +457,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 4435470755358351067, guid: 0ca2489789c81cb4e8943d9c709ad0d3, type: 3}
-  minY: 3.5
+  minY: -3.5
   maxY: 2
   leftX: -10
   rightX: 10
-  interval: 5
+  interval: 2
 --- !u!4 &997399958
 Transform:
   m_ObjectHideFlags: 0
