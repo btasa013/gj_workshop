@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
-        Vector2 force = new Vector2(x, y);
-        rb.linearVelocity = force.normalized * speed;
+        Vector3 force = new Vector3(x, y);
+        transform.position += speed * Time.deltaTime * force;
     }
 }
